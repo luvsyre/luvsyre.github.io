@@ -1,0 +1,189 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3 {
+    color: #ea59d7;
+    font-family: 'VT323', monospace;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 0 0 8px rgba(234, 89, 215, 0.6);
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #ea59d7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-shadow: 0 0 8px rgba(234, 89, 215, 0.8);
+}
+
+/* ===== LAYOUT ===== */
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ===== SIDEBARS ===== */
+.sidebar-left,
+.sidebar-right {
+    padding: 20px;
+}
+
+.widget {
+    margin-bottom: 30px;
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 8px;
+    border: 0px solid #ea59d7;
+    margin-bottom: 20px;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+    padding: 20px;
+}
+
+.links-section {
+    margin-top: 30px;
+}
+
+.link-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+}
+
+.link-list li::before {
+    content: '> ';
+    color: #ea59d7;
+}
+
+/* ===== RIGHT SIDEBAR LISTS ===== */
+.interests ul,
+.currently-reading {
+    margin-bottom: 20px;
+}
+
+.interests ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.interests li {
+    margin-bottom: 5px;
+}
+
+.interests li::before {
+    content: '• ';
+    color: #ea59d7;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ea59d7;
+    font-size: 12px;
+}
+
+/* ===== STATUS CAFE WIDGET ===== */
+#statuscafe {
+    padding: 12px;
+    background-color: #000000;
+    border: 1px solid #ea59d7;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    color: #f9f9f9;
+    font-size: 14px;
+}
+
+#statuscafe-username {
+    margin-bottom: 8px;
+    font-family: 'VT323', monospace;
+    font-size: 15px;
+    color: #ea59d7;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px rgba(234, 89, 215, 0.5);
+}
+
+#statuscafe-content {
+    margin: 0;
+    line-height: 1.5;
+    color: #f9f9f9;
+}
+
+#statuscafe-content::before {
+    content: '> ';
+    color: #ea59d7;
+}
+
+/* ===== IMOOD WIDGET ===== */
+#imood {
+    text-align: center;
+}
+
+#imood img {
+    border: 1px solid #ea59d7;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar-left,
+    .sidebar-right {
+        order: 2;
+    }
+    
+    .main-content {
+        order: 1;
+    }
+}

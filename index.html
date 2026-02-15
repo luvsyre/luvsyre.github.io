@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over Diaries</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Header -->
+    <header>
+        <h1>Game Over Diaries</h1>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar-left">
+            <!-- Profile Picture -->
+            <div class="profile">
+                <img src="assets/pp nakoshi1 muted.png" alt="Nakoshi Susumu">
+            </div>
+            
+            <!-- Status.cafe Widget -->
+            <div class="widget">
+                <h3>🕸️ Current Status</h3>
+                <div id="statuscafe">
+                    <div id="statuscafe-username"></div>
+                    <div id="statuscafe-content"></div>
+                </div>
+                <script src="https://status.cafe/current-status.js?name=luvsyre" defer></script>
+            </div>
+            
+            <!-- iMood Widget -->
+            <div class="widget">
+                <h3>📎Current Mood</h3>
+                <div id="imood">
+                    <a href="https://www.imood.com/users/luvsyre">
+                        <img src="https://moods.imood.com/display/uname-luvsyre/fg-ea59d7/bg-0a0a1a/imood.gif" 
+                             alt="The current mood of luvsyre at www.imood.com">
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Last.fm Widget -->
+            <div class="widget">
+                <h3>🎧 Last Song</h3>
+                <iframe 
+                    src="https://fast.jamlog.lol/w#eyJsZm1Vc2VyIjoibHV2c3lyZSIsImZhbGxiYWNrQWNjZW50IjoiI2ZmMDBmZiIsInRoZW1lIjp7ImJnIjoiIzAwMDAwMCIsImFjY2VudCI6IiNmZjgwZmYiLCJhdXRvRnJvbUFydCI6ZmFsc2UsImF1dG9UYXJnZXRzIjp7InRpdGxlIjpmYWxzZSwiYXJ0aXN0Ijp0cnVlLCJhbGJ1bSI6ZmFsc2UsIm1ldGEiOmZhbHNlfSwiZm9udCI6Ik51bml0byIsInRleHQiOnsidGl0bGUiOiJhY2NlbnQiLCJhcnRpc3QiOiJhY2NlbnQiLCJhbGJ1bSI6IiNjZmNmY2YiLCJtZXRhIjoiI2JkYmRiZCIsImR1cmF0aW9uIjoiYWNjZW50In0sInRleHRTaXplIjp7InRpdGxlIjoyMSwiYXJ0aXN0IjoxNywiYWxidW0iOjEyLCJtZXRhIjoxMiwiZHVyYXRpb24iOjExfSwidGV4dFN0eWxlIjp7InRpdGxlIjp7Iml0YWxpYyI6ZmFsc2UsInVuZGVybGluZSI6ZmFsc2UsImJvbGQiOnRydWUsInN0cmlrZSI6ZmFsc2V9LCJhcnRpc3QiOnsiaXRhbGljIjpmYWxzZSwidW5kZXJsaW5lIjpmYWxzZSwiYm9sZCI6ZmFsc2UsInN0cmlrZSI6ZmFsc2V9LCJhbGJ1bSI6eyJpdGFsaWMiOmZhbHNlLCJ1bmRlcmxpbmUiOmZhbHNlLCJib2xkIjpmYWxzZSwic3RyaWtlIjpmYWxzZX0sIm1ldGEiOnsiaXRhbGljIjpmYWxzZSwidW5kZXJsaW5lIjpmYWxzZSwiYm9sZCI6ZmFsc2UsInN0cmlrZSI6ZmFsc2V9LCJkdXJhdGlvbiI6eyJpdGFsaWMiOmZhbHNlLCJ1bmRlcmxpbmUiOmZhbHNlLCJib2xkIjpmYWxzZSwic3RyaWtlIjpmYWxzZX19LCJ0ZXh0VHJhbnNmb3JtIjp7InRpdGxlIjoibm9uZSIsImFydGlzdCI6Im5vbmUiLCJhbGJ1bSI6Im5vbmUiLCJtZXRhIjoibm9uZSIsImR1cmF0aW9uIjoibm9uZSJ9LCJ0ZXh0Rm9udCI6eyJ0aXRsZSI6Ik51bml0byIsImFydGlzdCI6Ik51bml0byIsImR1cmF0aW9uIjoiTnVuaXRvIn0sImRyb3BTaGFkb3ciOnsiZW5hYmxlZCI6ZmFsc2UsImJsdXIiOjQsImludGVuc2l0eSI6NTAsIm9mZnNldFgiOjIsIm9mZnNldFkiOjIsInVzZU9wcG9zaXRlQ29sb3IiOnRydWUsImN1c3RvbUNvbG9yIjoiIzAwMDAwMCIsInRhcmdldHMiOnsidGV4dCI6dHJ1ZSwiYWxidW1BcnQiOnRydWUsInByb2dyZXNzQmFyIjp0cnVlLCJiYWNrZ3JvdW5kIjpmYWxzZX0sInBlclRleHQiOnsidGl0bGUiOnsiZW5hYmxlZCI6dHJ1ZSwidXNlT3Bwb3NpdGVDb2xvciI6dHJ1ZX0sImFydGlzdCI6eyJlbmFibGVkIjp0cnVlLCJ1c2VPcHBvc2l0ZUNvbG9yIjp0cnVlfSwiYWxidW0iOnsiZW5hYmxlZCI6dHJ1ZSwidXNlT3Bwb3NpdGVDb2xvciI6dHJ1ZX0sIm1ldGEiOnsiZW5hYmxlZCI6dHJ1ZSwidXNlT3Bwb3NpdGVDb2xvciI6dHJ1ZX0sImR1cmF0aW9uIjp7ImVuYWJsZWQiOnRydWUsInVzZU9wcG9zaXRlQ29sb3IiOnRydWV9fX0sImJnRW5hYmxlZCI6dHJ1ZX0sImxheW91dCI6eyJ3IjozNTAsImgiOjExMCwic2hvd0FydCI6dHJ1ZSwiYWxpZ24iOiJsZWZ0IiwiYXJ0U2l6ZSI6NzIsImFydFBvc2l0aW9uIjoibGVmdCIsInNjcm9sbFRyaWdnZXJXaWR0aCI6MjMwLCJ0ZXh0R2FwIjoyLCJiYWNrZ3JvdW5kUmFkaXVzIjoxNiwiYXJ0UmFkaXVzIjoxNywidGV4dE9mZnNldCI6eyJ0aXRsZSI6eyJ4IjowLCJ5IjozfSwiYXJ0aXN0Ijp7IngiOjAsInkiOi01fSwiYWxidW0iOnsieCI6MCwieSI6MH0sIm1ldGEiOnsieCI6MCwieSI6MH0sImR1cmF0aW9uIjp7IngiOjAsInkiOi0xMH19fSwibWFycXVlZSI6eyJzcGVlZFB4UGVyU2VjIjoyNCwiZ2FwUHgiOjMyfSwiZmllbGRzIjp7InRpdGxlIjp0cnVlLCJhcnRpc3QiOnRydWUsImFsYnVtIjpmYWxzZSwicHJvZ3Jlc3MiOmZhbHNlLCJkdXJhdGlvbiI6ZmFsc2UsImhpc3RvcnkiOjUwLCJwYXVzZWRNb2RlIjoibGFiZWwiLCJwYXVzZWRUZXh0IjoiUGF1c2VkIiwiZHVyYXRpb25Gb3JtYXQiOiJib3RoIiwic2hvd0R1cmF0aW9uT25Qcm9ncmVzcyI6dHJ1ZSwic2hvd0R1cmF0aW9uQXNUZXh0Ijp0cnVlfSwic2Vzc2lvbktleSI6bnVsbH0"
+                    width="100%" 
+                    height="120" 
+                    frameborder="0">
+                </iframe>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <h2>Hi!</h2>
+            <p>⚠️ Website under construction ⚠️</p>
+
+            <p>Coming Soon....</p>
+            
+    
+            
+            <div class="links-section">
+                <h2>My corners of the interweb:</h2>
+                <ul class="link-list">
+                    <li><a href="https://luvsyre.tumblr.com" target="_blank">Blog</a></li>
+                    <li><a href="https://luvthinks.tumblr.com" target="_blank">Learning Journal</a></li>
+                    <li><a href="https://luvsklly.tumblr.com" target="_blank">Microblog</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="sidebar-right">
+    
+            <!-- Name Picture -->
+            <div class="profile">
+                <img src="assets/cooltext luvsyre logo.png" alt="luvsyre">
+            </div>
+            
+            <div class="interests">
+                <h3>Interests:</h3>
+                <ul>
+                    <li>Books</li>
+                    <li>Music</li>
+                    <li>SAR</li>
+                    <li>Twitch streams</li>
+                </ul>
+            </div>
+            
+            <div class="currently-reading">
+                <h3>currently reading:</h3>
+                <p>How to Build Self-Discipline: Resist Temptations and Reach Your Long-Term Goals - Martin Meadows</p>
+                <p>Some fiction book probably (I plan on re-reading all my childhood favorites,more manga, and comics)</p>
+                
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="https://github.com/luvsyre" target="_blank">github</a> | 
+        <a href="https://discord.com/users/541449753733365772" target="_blank">discord</a> | 
+        <a href="mailto:luvsyre11@gmail.com">email</a>
+    </footer>
+</body>
+</html>
